@@ -11,9 +11,9 @@ export const StudentCard: React.FC<StudentCardProps> = ({ student, onDelete }) =
   return (
     <div className="relative group h-full">
       {/* Card Border Glow */}
-      <div className="absolute -inset-0.5 bg-gradient-to-b from-slate-700 to-slate-900 rounded-2xl blur opacity-30 group-hover:opacity-70 transition duration-500"></div>
+      <div className="absolute -inset-0.5 bg-gradient-to-b from-slate-700 to-slate-900 rounded-2xl blur opacity-30 group-hover:opacity-70 transition duration-500 will-change-opacity"></div>
       
-      <div className="relative h-full bg-slate-900/80 backdrop-blur-md rounded-xl border border-slate-700/50 overflow-hidden hover:border-indigo-500/30 transition-all duration-300 flex flex-col">
+      <div className="relative h-full bg-slate-900/80 backdrop-blur-md rounded-xl border border-slate-700/50 overflow-hidden hover:border-indigo-500/30 transition-all duration-300 flex flex-col transform-gpu will-change-transform">
         {/* Holographic Header */}
         <div className="p-5 border-b border-slate-800 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden">
           <div className="absolute top-0 right-0 p-2 opacity-10">
